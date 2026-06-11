@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prototype 1 of the ESP32 C3 Zero case design — first iteration, key features, pros and cons." />
+  <title>Prototype 1 | ESP32 C3 Zero Case Design</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <img src="images/logo.png" alt="ESP32 Case Project logo" onerror="this.style.display='none'" />
+        <span>ESP32 Case Design</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prototype1.html" class="active" aria-current="page">Prototype 1</a></li>
+          <li><a href="prototype2.html">Prototype 2</a></li>
+          <li><a href="final.html">Final Design</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <p class="section-label">Stage 01 of 03</p>
+      <h1>Prototype 1</h1>
+      <p>The first physical iteration of the ESP32 C3 Zero enclosure — a proof-of-concept focused on basic dimensions and fit.</p>
+    </div>
+
+    <!-- IMAGE + DESCRIPTION -->
+    <div class="proto-grid">
+      <div class="proto-image">
+        <!-- Replace with your actual prototype 1 image -->
+        <img src="images/prototype1.jpg" alt="Photograph of Prototype 1 — first 3D printed ESP32 C3 Zero case" 
+             onerror="this.parentElement.innerHTML='<div class=\'image-placeholder\'><span>[ prototype1.jpg ]</span><span style=\'color:var(--muted)\'>Add your photo here</span></div>'" />
+      </div>
+
+      <div>
+        <p class="section-label">Overview</p>
+        <h2>Key features</h2>
+        <p style="color:var(--muted);">
+          Prototype 1 was designed using basic CAD measurements taken directly from the ESP32 C3 Zero datasheet.
+          The goal was to produce a working enclosure as quickly as possible to test fundamental fit and dimensions.
+        </p>
+
+        <ul style="margin-top:16px; padding-left:20px; color:var(--muted); font-size:0.9rem; line-height:2;">
+          <li>Simple rectangular two-part shell (base + lid)</li>
+          <li>Friction-fit lid closure — no fasteners or clips</li>
+          <li>No ventilation holes or cutouts</li>
+          <li>No port or button access openings</li>
+          <li>Printed in PLA at 0.2 mm layer height</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROS & CONS -->
+    <p class="section-label">Evaluation</p>
+    <h2>Pros &amp; cons</h2>
+    <div class="pro-con">
+      <div class="pro-list">
+        <h3>Advantages</h3>
+        <ul>
+          <li>Fast and simple to design and print</li>
+          <li>Confirmed overall board dimensions were correct</li>
+          <li>Provided a physical baseline to improve from</li>
+          <li>Low material cost for testing</li>
+        </ul>
+      </div>
+      <div class="con-list">
+        <h3>Problems &amp; limitations</h3>
+        <ul>
+          <li>Board fit was too loose — shifted inside the case</li>
+          <li>No ventilation caused noticeable heat build-up</li>
+          <li>USB-C port completely blocked by case wall</li>
+          <li>Boot and reset buttons inaccessible</li>
+          <li>Lid was very difficult to remove once fitted</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PLANNED IMPROVEMENTS -->
+    <div class="info-block">
+      <strong>Planned improvements for Prototype 2:</strong><br />
+      Tighten board tolerances so the module sits firmly without movement. Add ventilation slots on the side walls.
+      Cut openings for the USB-C port and tactile buttons. Replace the friction-fit lid with a snap-fit
+      clip mechanism for easier access.
+    </div>
+
+    <!-- NAVIGATION BETWEEN PAGES -->
+    <div style="display:flex; gap:12px; margin-top:40px; flex-wrap:wrap;">
+      <a href="index.html" class="btn btn-outline">← Back to Home</a>
+      <a href="prototype2.html" class="btn btn-primary">Next: Prototype 2 →</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>ESP32 C3 Zero Case Design Project · ICT30120 Certificate III in Information Technology</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Documenting the ESP32 C3 Zero case design journey from first prototype to final product." />
+  <title>ESP32 C3 Zero Case Design | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <!-- Replace logo.png with your own image -->
+        <img src="images/logo.png" alt="ESP32 Case Project logo" onerror="this.style.display='none'" />
+        <span>ESP32 Case Design</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="prototype1.html">Prototype 1</a></li>
+          <li><a href="prototype2.html">Prototype 2</a></li>
+          <li><a href="final.html">Final Design</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <p class="hero-tag">ICT30120 · ICTWEB304 · Unit Project</p>
+      <h1 id="hero-heading">ESP32 C3 Zero<br/>Case Design Journey</h1>
+      <p>
+        This website documents the complete design process for a custom 3D-printed
+        enclosure for the ESP32 C3 Zero microcontroller — from initial prototype
+        through to a refined final design.
+      </p>
+      <div class="hero-links">
+        <a href="prototype1.html" class="btn btn-primary">View Prototype 1</a>
+        <a href="final.html" class="btn btn-outline">See Final Design</a>
+      </div>
+    </section>
+
+    <!-- PURPOSE -->
+    <section aria-labelledby="purpose-heading">
+      <p class="section-label">About this project</p>
+      <h2 id="purpose-heading">Why a custom case?</h2>
+      <p style="color:var(--muted); max-width:680px;">
+        The ESP32 C3 Zero is a compact Wi-Fi and Bluetooth microcontroller used in
+        IoT projects. Without a suitable enclosure, the board is vulnerable to physical
+        damage, poor ventilation, and difficult mounting. This project explores three
+        iterations of a protective case designed and 3D-printed to solve these problems.
+      </p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- DESIGN STAGES CARDS -->
+    <section aria-labelledby="stages-heading">
+      <p class="section-label">Design stages</p>
+      <h2 id="stages-heading">From idea to final product</h2>
+      <div class="cards">
+
+        <article class="card">
+          <p class="card-step">Stage 01</p>
+          <h3>Prototype 1</h3>
+          <p>The first printed case — basic fit and dimensions tested. Identified issues with ventilation and button access.</p>
+          <a href="prototype1.html" class="card-link">View Prototype 1 →</a>
+        </article>
+
+        <article class="card">
+          <p class="card-step">Stage 02</p>
+          <h3>Prototype 2</h3>
+          <p>Refined design with improved airflow cutouts, better tolerances, and a snap-fit lid replacing the earlier friction fit.</p>
+          <a href="prototype2.html" class="card-link">View Prototype 2 →</a>
+        </article>
+
+        <article class="card">
+          <p class="card-step">Stage 03</p>
+          <h3>Final Design</h3>
+          <p>The finished enclosure — all issues resolved, clean aesthetics, and ready for real-world use in a project.</p>
+          <a href="final.html" class="card-link">View Final Design →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- COMPARISON TABLE -->
+    <section aria-labelledby="table-heading">
+      <p class="section-label">Side-by-side comparison</p>
+      <h2 id="table-heading">Design comparison</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Prototype 1</th>
+              <th>Prototype 2</th>
+              <th>Final Design</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fit and size</td>
+              <td>Slightly loose; board shifted inside</td>
+              <td>Improved tolerances; snug fit</td>
+              <td>Precise fit; board fully secured</td>
+            </tr>
+            <tr>
+              <td>Ventilation / cooling</td>
+              <td>No ventilation cutouts; heat build-up</td>
+              <td>Side vents added; better airflow</td>
+              <td>Optimised vent pattern; efficient cooling</td>
+            </tr>
+            <tr>
+              <td>Ease of printing</td>
+              <td>Simple geometry; printed quickly</td>
+              <td>More complex; minor support issues</td>
+              <td>Refined for minimal supports; clean print</td>
+            </tr>
+            <tr>
+              <td>Lid / closure</td>
+              <td>Friction fit; difficult to remove</td>
+              <td>Snap-fit attempted; not fully reliable</td>
+              <td>Secure snap-fit; easy open/close</td>
+            </tr>
+            <tr>
+              <td>Button / port access</td>
+              <td>No cutouts for ports or buttons</td>
+              <td>USB-C hole added; boot button exposed</td>
+              <td>All ports and buttons fully accessible</td>
+            </tr>
+            <tr>
+              <td>Overall quality</td>
+              <td>Functional proof of concept</td>
+              <td>Clear improvement; some issues remain</td>
+              <td>Ready for real-world deployment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CONTACT / FEEDBACK FORM -->
+    <section aria-labelledby="form-heading">
+      <p class="section-label">Get in touch</p>
+      <h2 id="form-heading">Feedback &amp; enquiries</h2>
+      <p style="color:var(--muted); margin-bottom:24px; max-width:500px;">
+        Have a question about the design process or want to share feedback? Fill in the form below.
+      </p>
+
+      <div class="form-wrap">
+        <form action="#" method="post" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Reason for enquiry <span class="req" aria-hidden="true">*</span></label>
+            <select id="reason" name="reason" required>
+              <option value="" disabled selected>Select a reason…</option>
+              <option value="feedback">General feedback</option>
+              <option value="question">Question about the design</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us what you think…" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Preferred prototype design</label>
+            <div class="radio-group">
+              <label><input type="radio" name="preference" value="prototype1" /> Prototype 1</label>
+              <label><input type="radio" name="preference" value="prototype2" /> Prototype 2</label>
+              <label><input type="radio" name="preference" value="final" /> Final Design</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit feedback</button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>ESP32 C3 Zero Case Design Project · ICT30120 Certificate III in Information Technology</p>
+  </footer>
+
+</body>
+</html>

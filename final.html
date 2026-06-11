@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Final Design of the ESP32 C3 Zero case — all issues resolved, ready for real-world use." />
+  <title>Final Design | ESP32 C3 Zero Case Design</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <img src="images/logo.png" alt="ESP32 Case Project logo" onerror="this.style.display='none'" />
+        <span>ESP32 Case Design</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prototype1.html">Prototype 1</a></li>
+          <li><a href="prototype2.html">Prototype 2</a></li>
+          <li><a href="final.html" class="active" aria-current="page">Final Design</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <p class="section-label">Stage 03 of 03</p>
+      <h1>Final Design</h1>
+      <p>The completed ESP32 C3 Zero enclosure — all prototype issues resolved and ready for deployment.</p>
+    </div>
+
+    <!-- IMAGE + DESCRIPTION -->
+    <div class="proto-grid">
+      <div class="proto-image">
+        <!-- Replace with your actual final design image -->
+        <img src="images/final.jpg" alt="Photograph of the Final Design — completed ESP32 C3 Zero case"
+             onerror="this.parentElement.innerHTML='<div class=\'image-placeholder\'><span>[ final.jpg ]</span><span style=\'color:var(--muted)\'>Add your photo here</span></div>'" />
+      </div>
+
+      <div>
+        <p class="section-label">Overview</p>
+        <h2>Key features</h2>
+        <p style="color:var(--muted);">
+          The final design incorporates all lessons learned across both prototypes. Every problem identified
+          in testing has been resolved, and the result is a clean, functional, and printable enclosure.
+        </p>
+
+        <ul style="margin-top:16px; padding-left:20px; color:var(--muted); font-size:0.9rem; line-height:2;">
+          <li>Precise 0.2 mm board tolerance — secure fit, no movement</li>
+          <li>Honeycomb vent pattern on side walls for maximum airflow</li>
+          <li>Recessed antenna window for optimal Wi-Fi signal</li>
+          <li>Reinforced snap-fit clips — reliable, easy open/close</li>
+          <li>Full port and button access cutouts</li>
+          <li>Support-free lid geometry for clean print results</li>
+          <li>Wall-mount slot on rear face for fixed installation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- IMPROVEMENTS FROM PROTOTYPES -->
+    <p class="section-label">Problem resolution</p>
+    <h2>How each issue was resolved</h2>
+    <div class="table-wrap" style="margin-bottom:32px;">
+      <table>
+        <thead>
+          <tr>
+            <th>Problem identified</th>
+            <th>Prototype it appeared in</th>
+            <th>How it was resolved in the Final Design</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Board movement inside case</td>
+            <td>Prototype 1</td>
+            <td>Precision inner cavity with 0.2 mm tolerance on all sides</td>
+          </tr>
+          <tr>
+            <td>No ventilation / heat build-up</td>
+            <td>Prototype 1</td>
+            <td>Honeycomb vent pattern — large open area, structural strength retained</td>
+          </tr>
+          <tr>
+            <td>USB-C port blocked</td>
+            <td>Prototype 1</td>
+            <td>Chamfered opening for easy cable insertion at any angle</td>
+          </tr>
+          <tr>
+            <td>Buttons inaccessible</td>
+            <td>Prototype 1</td>
+            <td>Recessed button guides — press-through access with no need to open case</td>
+          </tr>
+          <tr>
+            <td>Snap-fit clips too flexible</td>
+            <td>Prototype 2</td>
+            <td>Increased clip wall thickness from 1.2 mm to 1.8 mm; added reinforcing rib</td>
+          </tr>
+          <tr>
+            <td>Support marks on vent slots</td>
+            <td>Prototype 2</td>
+            <td>Redesigned vent geometry to 45° bridges — no supports needed</td>
+          </tr>
+          <tr>
+            <td>Wi-Fi range reduced by case</td>
+            <td>Prototype 2</td>
+            <td>Recessed 8 mm × 12 mm antenna window cut directly above antenna position</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-label">Project conclusion</p>
+    <h2>Why this design works</h2>
+
+    <div class="info-block" style="border-left-color: var(--pro);">
+      <strong>The final design successfully meets all original project goals.</strong><br /><br />
+      The enclosure protects the ESP32 C3 Zero from physical damage while allowing full functionality —
+      all ports and buttons are accessible, heat is managed effectively through the honeycomb ventilation,
+      and the snap-fit lid provides convenient access without tools. The print geometry has been optimised
+      to produce clean results on a standard FDM printer without any support material, reducing both
+      print time and post-processing work.
+      <br /><br />
+      This iterative design process — test, identify problems, revise, retest — demonstrates how physical
+      prototyping rapidly surfaces issues that are difficult to predict in CAD alone. The three-iteration
+      approach was essential to arriving at a reliable, polished final product.
+    </div>
+
+    <!-- NAVIGATION BETWEEN PAGES -->
+    <div style="display:flex; gap:12px; margin-top:40px; flex-wrap:wrap;">
+      <a href="prototype2.html" class="btn btn-outline">← Prototype 2</a>
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>ESP32 C3 Zero Case Design Project · ICT30120 Certificate III in Information Technology</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prototype 2 of the ESP32 C3 Zero case — improved ventilation, snap-fit lid, and port access." />
+  <title>Prototype 2 | ESP32 C3 Zero Case Design</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <img src="images/logo.png" alt="ESP32 Case Project logo" onerror="this.style.display='none'" />
+        <span>ESP32 Case Design</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prototype1.html">Prototype 1</a></li>
+          <li><a href="prototype2.html" class="active" aria-current="page">Prototype 2</a></li>
+          <li><a href="final.html">Final Design</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <p class="section-label">Stage 02 of 03</p>
+      <h1>Prototype 2</h1>
+      <p>An improved iteration addressing the fit, ventilation, and accessibility issues found in Prototype 1.</p>
+    </div>
+
+    <!-- IMAGE + DESCRIPTION -->
+    <div class="proto-grid">
+      <div class="proto-image">
+        <!-- Replace with your actual prototype 2 image -->
+        <img src="images/prototype2.jpg" alt="Photograph of Prototype 2 — improved ESP32 C3 Zero case with vents"
+             onerror="this.parentElement.innerHTML='<div class=\'image-placeholder\'><span>[ prototype2.jpg ]</span><span style=\'color:var(--muted)\'>Add your photo here</span></div>'" />
+      </div>
+
+      <div>
+        <p class="section-label">Overview</p>
+        <h2>Key features</h2>
+        <p style="color:var(--muted);">
+          Prototype 2 was a significant redesign. Using feedback from Prototype 1 testing, the CAD model
+          was updated to address every identified issue before printing a second physical version.
+        </p>
+
+        <ul style="margin-top:16px; padding-left:20px; color:var(--muted); font-size:0.9rem; line-height:2;">
+          <li>Tighter board tolerances — 0.2 mm clearance on all sides</li>
+          <li>Horizontal vent slots added to both side walls</li>
+          <li>USB-C port opening cut into the base end wall</li>
+          <li>Boot and reset button cutouts added to lid</li>
+          <li>Snap-fit clip mechanism replacing friction fit</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CHANGES FROM PROTOTYPE 1 -->
+    <p class="section-label">What changed and why</p>
+    <h2>Changes from Prototype 1</h2>
+    <div class="table-wrap" style="margin-bottom:32px;">
+      <table>
+        <thead>
+          <tr>
+            <th>Issue in Prototype 1</th>
+            <th>Change made in Prototype 2</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Board too loose inside case</td>
+            <td>Reduced inner cavity to 0.2 mm tolerance</td>
+            <td>Prevents movement and vibration damage</td>
+          </tr>
+          <tr>
+            <td>No ventilation</td>
+            <td>Added 4 side vent slots (1 mm × 8 mm)</td>
+            <td>Reduces heat build-up during operation</td>
+          </tr>
+          <tr>
+            <td>USB-C port blocked</td>
+            <td>Cut 10 mm × 4 mm opening in end wall</td>
+            <td>Allows charging and programming without opening case</td>
+          </tr>
+          <tr>
+            <td>Buttons inaccessible</td>
+            <td>Added 3 mm circular cutouts above each button</td>
+            <td>Allows boot and reset buttons to be pressed normally</td>
+          </tr>
+          <tr>
+            <td>Lid too tight</td>
+            <td>Added two snap-fit clips with 0.5 mm flex gap</td>
+            <td>Easier to open while keeping lid secure</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- PROS & CONS -->
+    <p class="section-label">Evaluation</p>
+    <h2>Pros &amp; cons</h2>
+    <div class="pro-con">
+      <div class="pro-list">
+        <h3>Advantages</h3>
+        <ul>
+          <li>Board now sits firmly with no movement</li>
+          <li>USB-C accessible without disassembly</li>
+          <li>Buttons can be used with case closed</li>
+          <li>Ventilation noticeably improved</li>
+        </ul>
+      </div>
+      <div class="con-list">
+        <h3>Remaining problems</h3>
+        <ul>
+          <li>Snap-fit clips slightly too flexible — lid can pop off</li>
+          <li>Vent slots could be wider for better airflow</li>
+          <li>Print supports left rough marks on vent areas</li>
+          <li>Antenna window not yet added — affects Wi-Fi range</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PLANNED IMPROVEMENTS -->
+    <div class="info-block">
+      <strong>Planned improvements for the Final Design:</strong><br />
+      Stiffen the snap-fit clips by increasing wall thickness at the clip base. Widen vent slots and add a
+      honeycomb pattern for better airflow with less material. Add a small recessed window above the antenna
+      area to improve Wi-Fi performance. Redesign lid geometry to eliminate the need for print supports.
+    </div>
+
+    <!-- NAVIGATION BETWEEN PAGES -->
+    <div style="display:flex; gap:12px; margin-top:40px; flex-wrap:wrap;">
+      <a href="prototype1.html" class="btn btn-outline">← Prototype 1</a>
+      <a href="final.html" class="btn btn-primary">Next: Final Design →</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>ESP32 C3 Zero Case Design Project · ICT30120 Certificate III in Information Technology</p>
+  </footer>
+
+</body>
+</html>
